@@ -1,15 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/css/style.css" />
-    <title>Glosarium Testing</title>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <link rel="stylesheet" href="https://glosarium.iliauni.edu.ge/css/style.css" />
+      <title>გლოსარიუმი</title>
+    </head>
   </head>
   <body>
-    <div>Glosarium testing</div>
-
-    <script src="./public/js/index.js"></script>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__logo-text">
+          <a href="https://glosarium.iliauni.edu.ge"
+            ><img src="../images/icons/logo.svg" alt="logo"
+          /></a>
+        </div>
+        <div class="header__logo">
+          <a href="https://glosarium.iliauni.edu.ge"><h1>გლოსარიუმი</h1></a>
+        </div>
+        <div class="header__burger">
+          <img src="../images/icons/burger-menu.svg" alt="burger-menu" />
+        </div>
+        <ul class="header__nav">
+          <a href="https://glosarium.iliauni.edu.ge"
+            ><li class="header__nav__wrapper--link active">
+              მთავარი
+            </li></a
+          >
+          <a href="https://glosarium.iliauni.edu.ge/about-us"
+            ><li class="header__nav__wrapper--link ">პროექტის შესახებ</li></a
+          >
+          <a href="https://glosarium.iliauni.edu.ge/glossary"
+            ><li class="header__nav__wrapper--link ">ლექსიკონი</li></a
+          >
+          <a href="https://glosarium.iliauni.edu.ge/word-suggestion"
+            ><li class="header__nav__wrapper--link ">შეთავაზება</li></a
+          >
+          <a href="https://glosarium.iliauni.edu.ge/contact"
+            ><li class="header__nav__wrapper--link last ">კონტაქტი</li></a
+          >
+        </ul>
+      </div>
+</header>      <section class="purple-box"></section>
+      <section class="main">
+      <div class="container main__inner">
+        <div class="main__title">
+          <p>უცხო სიტყვებისა და მათი ქართული შესატყვისების გლოსარიუმი</p>
+        </div>
+        <div class="main__cover">
+          <div class="img">
+            <img src="https://glosarium.iliauni.edu.ge/images/glossary.svg" alt="უცხო სიტყვებისა და მათი ქართული შესატყვისების გლოსარიუმი">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="search">
+        <div class="container search__inner">
+            <form method="get" action="https://glosarium.iliauni.edu.ge/glossary">
+                <div class="search__title title">
+                <h3>მოძებნე ქართული შესატყვისი სიტყვა</h3>
+                </div>
+                <div class="search__input">
+                <img src="images/icons/search.svg" alt="search" />
+                <input
+                    type="search"
+                    name="word"
+                    placeholder="ჩაწერე საძიებო სიტყვა"
+                />
+                </div>
+            </form>
+            <div class="search__alphabet">
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ა">ა</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ბ">ბ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=გ">გ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=დ">დ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ე">ე</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ვ">ვ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ზ">ზ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=თ">თ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ი">ი</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=კ">კ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ლ">ლ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=მ">მ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ნ">ნ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ო">ო</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=პ">პ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ჟ">ჟ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=რ">რ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ს">ს</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ტ">ტ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=უ">უ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ფ">ფ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ქ">ქ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ღ">ღ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ყ">ყ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=შ">შ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ჩ">ჩ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ც">ც</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ძ">ძ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=წ">წ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ჭ">ჭ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ხ">ხ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ჯ">ჯ</a></span>
+            <span class="search__alphabet__letter "><a href="/glossary?letter=ჰ">ჰ</a></span>
+    </div>        </div>
+    </section>
+        <section class="info">
+      <div class="container info__inner">
+        <div class="info__cover">
+          <div class="img">
+            <img src="https://glosarium.iliauni.edu.ge/images/about.svg" alt="რა არის უცხო სიტყვებისა და მათი ქართული შესატყვისების გლოსარიუმი?">
+          </div>
+        </div>
+        <div class="info__text">
+          <div class="info__text__title title">
+            <h3>
+              რა არის უცხო სიტყვებისა და მათი ქართული შესატყვისების გლოსარიუმი?
+            </h3>
+          </div>
+          <div class="info__text__p">
+            <p>უცხო სიტყვას შეიძლება ჰქონდეს ერთზე მეტი მნიშვნელობა, თუმცა მისი ქართული შესატყვისი ამ უცხო სიტყვის მხოლოდ ერთ, ყველაზე გავრცელებულ მნიშვნელობას მიემართება გლოსარიუმში.</p>
+          </div>
+          <div class="info__text__more">
+            <a href="https://glosarium.iliauni.edu.ge/about-us">ნახე მეტი...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+            <section class="daily-word popular-word">
+      <div class="container daily-word__inner mySwiper" data-swipper="mySwiper">
+        <div class="daily-word__title title">
+          <h3>ყველაზე ხშირად მოძებნადი სიტყვები</h3>
+        </div>
+        <div class="daily-word__wrapper swiper-wrapper">
+                              <div
+            class="daily-word__wrapper--box first"
+            data-swipper="swiper-slide"
+          >
+            <div class="daily-word__wrapper--box-content word">
+              <img src="images/icons/check-circle.svg" alt="check-circle" />
+              <span class="copyable-text">გადახრა;</span>
+              <!-- <img
+                src="images/icons/heart.svg"
+                alt="heart"
+                class="second-icon heart"
+              /> -->
+              <img
+                src="images/icons/copy.svg"
+                alt="copy"
+                class="second-icon copy"
+              />
+            </div>
+            <div class="daily-word__wrapper--box-content word">
+              <img src="images/icons/x-cross.svg" alt="x-cross" />
+              <span class="copyable-text">აბერაცია</span>
+              <img
+                src="images/icons/copy.svg"
+                alt="copy"
+                class="second-icon copy"
+              />
+            </div>
+          </div>
+                  </div>
+        <div class="daily-word__controls" id="controls">
+          <div data-swipper="swiper-button-prev"></div>
+          <div data-swipper="swiper-button-next"></div>
+        </div>
+        <div class="daily-word__full full-dictionary">
+          <a href="#">სრული გლოსარიუმი</a>
+        </div>
+      </div>
+    </section>
+            <section class="daily-word last-word">
+      <div class="container daily-word__inner mySwiper" data-swipper="mySwiper">
+        <div class="daily-word__title title">
+          <h3>ბოლოს დამატებული სიტყვები</h3>
+        </div>
+       
+        <div class="daily-word__wrapper swiper-wrapper">
+                              <div
+            class="daily-word__wrapper--box first"
+            data-swipper="swiper-slide"
+          >
+            <div class="daily-word__wrapper--box-content word">
+              <img src="images/icons/check-circle.svg" alt="check-circle" />
+              <span class="copyable-text">სასტუმრო;</span>
+              <img
+                src="images/icons/copy.svg"
+                alt="copy"
+                class="second-icon copy"
+              />
+              <!-- <img
+                src="images/icons/heart.svg"
+                alt="heart"
+                class="second-icon heart"
+              /> -->
+            </div>
+            <div class="daily-word__wrapper--box-content word">
+              <img src="images/icons/x-cross.svg" alt="x-cross" />
+              <span class="copyable-text">ოტელი</span>
+              <img
+                src="images/icons/copy.svg"
+                alt="copy"
+                class="second-icon copy"
+              />
+            </div>
+          </div>
+                              <div
+            class="daily-word__wrapper--box second"
+            data-swipper="swiper-slide"
+          >
+            <div class="daily-word__wrapper--box-content word">
+              <img src="images/icons/check-circle.svg" alt="check-circle" />
+              <span class="copyable-text">კაცთმოყვარეობა.</span>
+              <img
+                src="images/icons/copy.svg"
+                alt="copy"
+                class="second-icon copy"
+              />
+              <!-- <img
+                src="images/icons/heart.svg"
+                alt="heart"
+                class="second-icon heart"
+              /> -->
+            </div>
+            <div class="daily-word__wrapper--box-content word">
+              <img src="images/icons/x-cross.svg" alt="x-cross" />
+              <span class="copyable-text">ჰუმანურობა</span>
+              <img
+                src="images/icons/copy.svg"
+                alt="copy"
+                class="second-icon copy"
+              />
+            </div>
+          </div>
+                              <div
+            class="daily-word__wrapper--box third"
+            data-swipper="swiper-slide"
+          >
+            <div class="daily-word__wrapper--box-content word">
+              <img src="images/icons/check-circle.svg" alt="check-circle" />
+              <span class="copyable-text">ჩუქურთმა;</span>
+              <img
+                src="images/icons/copy.svg"
+                alt="copy"
+                class="second-icon copy"
+              />
+              <!-- <img
+                src="images/icons/heart.svg"
+                alt="heart"
+                class="second-icon heart"
+              /> -->
+            </div>
+            <div class="daily-word__wrapper--box-content word">
+              <img src="images/icons/x-cross.svg" alt="x-cross" />
+              <span class="copyable-text">ორნამენტი</span>
+              <img
+                src="images/icons/copy.svg"
+                alt="copy"
+                class="second-icon copy"
+              />
+            </div>
+          </div>
+                  </div>
+        <div class="daily-word__controls" id="controls">
+          <div data-swipper="swiper-button-prev"></div>
+          <div data-swipper="swiper-button-next"></div>
+        </div>
+        <div class="daily-word__full full-dictionary">
+          <a href="https://glosarium.iliauni.edu.ge/glossary">სრული გლოსარიუმი</a>
+        </div>
+      </div>
+    </section>
+        <!-- <section class="similar-word">
+      <div class="container similar-word__inner">
+        <div class="similar-word__title title">
+          <h3>შეუსაბამე სინონიმები ქართულ შესატყვისებს</h3>
+        </div>
+        <div class="similar-word__wrapper">
+          <div class="similar-word__left">
+            <div class="similar-word__left--box similar-word--box">
+              <p>განყენებული</p>
+            </div>
+            <div class="similar-word__left--box similar-word--box">
+              <p>განყენებული</p>
+            </div>
+            <div class="similar-word__left--box similar-word--box">
+              <p>განყენებული</p>
+            </div>
+          </div>
+          <div class="similar-word__right">
+            <div
+              class="similar-word__right--box similar-word--box draggable"
+              draggable="true"
+            >
+              <img src="images/icons/arrowupanddown.svg" id="drag" />
+              <p>აბსტრაქტული 1</p>
+            </div>
+            <div
+              class="similar-word__right--box similar-word--box draggable"
+              draggable="true"
+            >
+              <img src="images/icons/arrowupanddown.svg" id="drag" />
+              <p>აბსტრაქტული 2</p>
+            </div>
+            <div
+              class="similar-word__right--box similar-word--box draggable"
+              draggable="true"
+            >
+              <img src="images/icons/arrowupanddown.svg" id="drag" />
+              <p>აბსტრაქტული 3</p>
+            </div>
+          </div>
+        </div>
+        <div class="daily-word__full full-dictionary">
+          <a href="#">სრული გლოსარიუმი</a>
+        </div>
+      </div>
+    </section> -->    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__first-row">
+          <div class="footer__first">
+            <div class="footer__first__logo">
+              <img src="images/icons/logo-white.svg" alt="logo-white" />
+            </div>
+            
+            <div class="footer__by__responsive">
+              <p>
+                გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების
+                ცენტრის დახმარებით ან ინიციატივით.
+              </p>
+            </div>
+            <div class="footer__first__rights">
+              <p>ყველა უფლება დაცულია</p>
+            </div>
+          </div>
+          <div class="footer__second">
+            <div class="footer__second__uls">
+              <ul>
+                <a href="https://glosarium.iliauni.edu.ge"><li>მთავარი გვერდი</li></a>
+                <a href="https://glosarium.iliauni.edu.ge/about-us"><li>ჩვენ შესახებ</li></a>
+                <a href="https://glosarium.iliauni.edu.ge/glossary"><li>გლოსარიუმი</li></a>
+                <a href="#"><li>ბლოგი</li></a>
+              </ul>
+             
+              <form
+                action="https://glosarium.iliauni.edu.ge/subscribe"
+                method="post"
+                class="footer__input footer__input__first"
+              >
+                <input type="hidden" name="_token" value="tMgG2ydFt7b9YqrnAZLluarOIdZUd80UrNRUoB1F">                <input
+                  required
+                  type="email"
+                  name="subscribe_email"
+                  placeholder="ჩაწერეთ თქვენი ელ-ფოსტა"
+                  value=""
+                />
+                <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
+                <button type="submit">
+                  <img src="images/icons/email-send.svg" />
+                </button>
+              </form>
+            </div>
+            <div class="footer__input footer__input__second">
+              <input type="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა" />
+              <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
+              <img src="images/icons/email-send.svg" />
+            </div>
+            <div class="footer__by footer__by__normal">
+              <p>
+                გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების
+                ცენტრის დახმარებით ან ინიციატივით.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>    <script src="https://glosarium.iliauni.edu.ge/js/app.js"></script>
   </body>
 </html>
