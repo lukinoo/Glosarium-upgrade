@@ -33,15 +33,13 @@
             ><li class="header__nav__wrapper--link">მთავარი</li></a
           >
           <a href="https://glosarium.iliauni.edu.ge/about-us"
-            ><li class="header__nav__wrapper--link active">
-              პროექტის შესახებ
-            </li></a
+            ><li class="header__nav__wrapper--link">პროექტის შესახებ</li></a
           >
           <a href="https://glosarium.iliauni.edu.ge/glossary"
             ><li class="header__nav__wrapper--link">ლექსიკონი</li></a
           >
           <a href="https://glosarium.iliauni.edu.ge/word-suggestion"
-            ><li class="header__nav__wrapper--link">შეთავაზება</li></a
+            ><li class="header__nav__wrapper--link active">შეთავაზება</li></a
           >
           <a href="https://glosarium.iliauni.edu.ge/contact"
             ><li class="header__nav__wrapper--link last">კონტაქტი</li></a
@@ -66,60 +64,93 @@
         </form>
       </div>
     </section>
-    <section class="about-us">
-      <div class="container about-us__inner">
-        <div class="about-us__left">
-          <div class="about-us__left__title title">
-            <h2>ჩვენ შესახებ</h2>
-          </div>
-          <div class="about-us__left__text text">
-            სინონიმია ფართოდაა გავრცელებული ნებისმიერი ენის ლექსიკურ სისტემაში
-            და მოცემული ენის ლექსიკურ სიმდიდრესა და მრავალფეროვნებაზე
-            მეტყველებს. სინონიმიას განმარტავენ როგორც მსგავსი ლექსიკური
-            მნიშვნელობის სიტყვებს.
-          </div>
-          <div class="about-us__left__button button">
-            <button>
-              <a href="https://glosarium.iliauni.edu.ge/contact"
-                >დაგვიკავშირდით</a
-              >
-            </button>
-          </div>
+    <section class="not-found">
+      <div class="container not-found__inner">
+        <div class="not-found__img">
+          <img src="/images/not-found.png" alt="not-found" />
         </div>
-        <div class="about-us__right">
-          <div class="about-us__right__img">
-            <div class="img">
-              <img
-                src="https://glosarium.iliauni.edu.ge/images/about2.svg"
-                alt="ჩვენ შესახებ"
-              />
-            </div>
-          </div>
+        <div class="title word-suggest-text">
+          <h1>
+            თუ იცი უცხო სიტყვა, რომელიც ჩვენს გლოსარიუმში ვერ იპოვე,
+            გამოგვიგზავნე და ერთად გავამდიდროთ ლექსიკონი
+          </h1>
+        </div>
+        <div class="not-found__pen">
+          <img src="/images/icons/pen.svg" alt="pen" />
         </div>
       </div>
     </section>
-    <section class="targets">
-      <div class="container targets__inner">
-        <div class="targets__left">
-          <div class="targets__left__img">
-            <img src="images/target.svg" alt="target" />
+    <section class="add-word-form">
+      <div class="container add-word-form__inner">
+        <form
+          method="post"
+          action="https://glosarium.iliauni.edu.ge/word-suggestion"
+        >
+          <input
+            type="hidden"
+            name="_token"
+            value="tMgG2ydFt7b9YqrnAZLluarOIdZUd80UrNRUoB1F"
+          />
+          <div class="add-word-form__wrapper">
+            <div class="add-word-form__left">
+              <div class="add-word-form__left__name">
+                <label for="name">სახელი, გვარი</label>
+                <div>
+                  <img src="/images/icons/user.svg" alt="user" />
+                  <input type="text" name="name" id="name" value="" required />
+                </div>
+              </div>
+              <div class="add-word-form__left__mail">
+                <label for="mail">ელ-ფოსტის მისამართი</label>
+                <div>
+                  <img src="/images/icons/mail.svg" alt="mail" />
+                  <input
+                    type="email"
+                    name="email"
+                    id="mail"
+                    value=""
+                    required
+                  />
+                </div>
+              </div>
+              <div class="add-word-form__left__phone">
+                <label for="tel">მობილურის ნომერი</label>
+                <div>
+                  <img src="/images/icons/smartphone.svg" alt="smartphone" />
+                  <input type="tel" name="phone" id="tel" value="" required />
+                </div>
+              </div>
+            </div>
+            <div class="add-word-form__right">
+              <div class="add-word-form__right__foreign-word">
+                <label for="foreign-word">უცხო სიტყვა</label>
+                <div>
+                  <textarea
+                    name="foreign-word"
+                    id="foreign-word"
+                    cols="10"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="add-word-form__right__georgian-word">
+                <label for="georgian-word">ქართული შესატყვისი</label>
+                <div>
+                  <textarea
+                    name="georgian-word"
+                    id="georgian-word"
+                    cols="10"
+                    rows="10"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="targets__right">
-          <div class="targets__right__title title">
-            <h2>რა არის ჩვენი მიზანი</h2>
+          <div class="submit button">
+            <button type="submit">გაგზავნა</button>
           </div>
-          <div class="targets__right__text text">
-            სინონიმია ფართოდაა გავრცელებული ნებისმიერი ენის ლექსიკურ სისტემაში
-            და მოცემული ენის ლექსიკურ სიმდიდრესა და მრავალფეროვნებაზე
-            მეტყველებს. სინონიმიას განმარტავენ როგორც მსგავსი ლექსიკური
-            მნიშვნელობის სიტყვებს. ეს განმარტება ძალიან ზოგადია, თუმცა არსებობს
-            სინონიმიის ბევრი სხვა განმარტებაც და სხვადასხვა კლასიფიკაცია, რაც ამ
-            ლინგვისტური მოვლენის სირთულეზე მეტყველებს. ეს ბუნებრივიცაა, რადგან
-            თავად სიტყვის ლექსიკური მნიშვნელობაა უაღრესად რთული, კომპლექსური და
-            მრავალწახნაგოვანი.
-          </div>
-        </div>
+        </form>
       </div>
     </section>
     <footer class="footer">
