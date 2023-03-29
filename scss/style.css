@@ -334,7 +334,7 @@ a {
     position: absolute;
     bottom: -100%;
     left: 0;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     width: 110%;
     height: 1px;
   }
@@ -615,6 +615,10 @@ span[aria-current=page] {
 
 .add-word-form .submit button {
   color: #fff;
+}
+
+.footerItem {
+  flex: 1;
 }
 
 .purple-box {
