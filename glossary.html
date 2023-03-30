@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <link
+        rel="stylesheet"
+        href="https://glosarium.iliauni.edu.ge/css/style.css"
+      />
+      <title>გლოსარიუმი</title>
+    </head>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__logo-text">
+          <a href="https://glosarium.iliauni.edu.ge"
+            ><img src="../images/icons/logo.svg" alt="logo"
+          /></a>
+        </div>
+        <div class="header__logo">
+          <a href="https://glosarium.iliauni.edu.ge"><h1>გლოსარიუმი</h1></a>
+        </div>
+        <div class="header__burger">
+          <img src="../images/icons/burger-menu.svg" alt="burger-menu" />
+        </div>
+        <ul class="header__nav">
+          <a href="https://glosarium.iliauni.edu.ge"
+            ><li class="header__nav__wrapper--link">მთავარი</li></a
+          >
+          <a href="https://glosarium.iliauni.edu.ge/about-us"
+            ><li class="header__nav__wrapper--link">პროექტის შესახებ</li></a
+          >
+          <a href="https://glosarium.iliauni.edu.ge/glossary"
+            ><li class="header__nav__wrapper--link active">ლექსიკონი</li></a
+          >
+          <a href="https://glosarium.iliauni.edu.ge/word-suggestion"
+            ><li class="header__nav__wrapper--link">შეთავაზება</li></a
+          >
+          <a href="https://glosarium.iliauni.edu.ge/contact"
+            ><li class="header__nav__wrapper--link last">კონტაქტი</li></a
+          >
+        </ul>
+      </div>
+    </header>
+    <section class="search-secondary">
+      <div class="container search-secondary__inner">
+        <form
+          action="https://glosarium.iliauni.edu.ge/glossary"
+          method="get"
+          class="search-secondary__input"
+        >
+          <img src="/images/icons/search__about-me.svg" alt="search" />
+          <input
+            type="search"
+            name="word"
+            placeholder="ჩაწერე საძიებო სიტყვა"
+            value=""
+          />
+        </form>
+      </div>
+    </section>
+    <div class="glosarium-alphabet">
+      <div class="container">
+        <h1 class="glosarium-alphabet__heading">გლოსარიუმი</h1>
+        <div class="search__alphabet">
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ა">ა</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ბ">ბ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=გ">გ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=დ">დ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ე">ე</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ვ">ვ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ზ">ზ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=თ">თ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ი">ი</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=კ">კ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ლ">ლ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=მ">მ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ნ">ნ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ო">ო</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=პ">პ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ჟ">ჟ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=რ">რ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ს">ს</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ტ">ტ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=უ">უ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ფ">ფ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ქ">ქ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ღ">ღ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ყ">ყ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=შ">შ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ჩ">ჩ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ც">ც</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ძ">ძ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=წ">წ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ჭ">ჭ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ხ">ხ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ჯ">ჯ</a></span
+          >
+          <span class="search__alphabet__letter"
+            ><a href="/glossary?letter=ჰ">ჰ</a></span
+          >
+        </div>
+      </div>
+    </div>
+    <section class="glosarium-words">
+      <div class="container">
+        <div class="glosarium-words__wrapper">
+          <!-- foreign words -->
+          <div class="glosarium-words__heading-wrapper">
+            <h2 class="glosarium-words__heading">უცხო სიტყვა</h2>
+            <h2 class="glosarium-words__heading">ქართული შესატყვისი</h2>
+          </div>
+          <ul class="glosarium-words__list">
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აბდომენი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">მუცელი;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აბერაცია</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">გადახრა;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">ბაკი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">ავზი;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აბლაუტი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">ხმოვანთმონაცვლეობა;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აბოლიცია</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">გაუქმება, მოსპობა;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აბსოლუტური</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">სრული;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აბსორბენტი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">შთამნთქმელი;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აბსტრაქტული</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">განყენებული;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აბსურდი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">უაზრობა;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აბსურდული</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">უაზრო;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აბსცესი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">ჩირქგროვა;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აგამია</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">დაუქორწინებლობა;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აგრარული</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">
+                    სასოფლო-სამეურნეო, მიწათმოქმედებისა;
+                  </p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აგრესია</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">შეიარაღებული თავდასხმა;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აგრესიული</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">თავდასხმითი, დაპყრობითი;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აგრესორი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">დამპყრობელი;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">ადაპტაცია</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">შეგუება, შეჩვევა;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">ადაპტერი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">გადამყვანი;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">ადეკვატური</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">შესაბამისი;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">ადვერბი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">ზმნისართი;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">ადვერბული/ადვერბიალური</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">ზმნისართული;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">ადინამია</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">სისუსტე, უძლურება;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">ადიულტერი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">ცოლქმრული ღალატი;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">ადმინისტრატორი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">მმართველი;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">ადმინისტრირება</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">მართვა;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">ადრესატი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">მიმღები;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აერაცია</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">განიავება;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აერონავტი</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">ჰაერნაოსანი;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">აერონავტიკა</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">ჰაერნაოსნობა;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="foreign-word word">
+                <div class="flex">
+                  <img src="/images/icons/x-cross.svg" alt="x-cross" />
+                  <p class="copyable-text">ავთენტიკური</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+              <div class="georgian-word word">
+                <div class="flex">
+                  <img
+                    src="/images/icons/check-circle.svg"
+                    alt="check-circle"
+                  />
+                  <p class="copyable-text">სარწმუნო, ნამდვილი;</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/images/icons/copy.svg"
+                    alt="copy-icon"
+                    class="copy"
+                  />
+                  <!-- <img src="/images/icons/heart.svg" alt="heart-icon" /> -->
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="pagination">
+          <!-- loop -->
+          <!-- << < 1 2 3 4 5 6 7 > >> -->
+
+          <span aria-current="page">
+            <span
+              class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default leading-5"
+              >1</span
+            >
+          </span>
+          <a
+            href="https://glosarium.iliauni.edu.ge/glossary?page=2"
+            class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+            aria-label="Go to page 2"
+          >
+            2
+          </a>
+          <a
+            href="https://glosarium.iliauni.edu.ge/glossary?page=3"
+            class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+            aria-label="Go to page 3"
+          >
+            3
+          </a>
+          <a
+            href="https://glosarium.iliauni.edu.ge/glossary?page=4"
+            class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+            aria-label="Go to page 4"
+          >
+            4
+          </a>
+          <a
+            href="https://glosarium.iliauni.edu.ge/glossary?page=5"
+            class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+            aria-label="Go to page 5"
+          >
+            5
+          </a>
+          <a
+            href="https://glosarium.iliauni.edu.ge/glossary?page=6"
+            class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+            aria-label="Go to page 6"
+          >
+            6
+          </a>
+          <a
+            href="https://glosarium.iliauni.edu.ge/glossary?page=7"
+            class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+            aria-label="Go to page 7"
+          >
+            7
+          </a>
+          <a
+            href="https://glosarium.iliauni.edu.ge/glossary?page=8"
+            class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+            aria-label="Go to page 8"
+          >
+            8
+          </a>
+          <a
+            href="https://glosarium.iliauni.edu.ge/glossary?page=9"
+            class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+            aria-label="Go to page 9"
+          >
+            9
+          </a>
+          <a
+            href="https://glosarium.iliauni.edu.ge/glossary?page=10"
+            class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+            aria-label="Go to page 10"
+          >
+            10
+          </a>
+
+          <span aria-disabled="true">
+            <span
+              class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 cursor-default leading-5"
+              >...</span
+            >
+          </span>
+
+          <a
+            href="https://glosarium.iliauni.edu.ge/glossary?page=24"
+            class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+            aria-label="Go to page 24"
+          >
+            24
+          </a>
+          <a
+            href="https://glosarium.iliauni.edu.ge/glossary?page=25"
+            class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"
+            aria-label="Go to page 25"
+          >
+            25
+          </a>
+          <a href="https://glosarium.iliauni.edu.ge/glossary?page=2">></a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__first-row">
+          <div class="footer__first">
+            <div class="footer__first__logo">
+              <img src="images/icons/logo-white.svg" alt="logo-white" />
+            </div>
+
+            <div class="footer__by__responsive">
+              <p>
+                გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების
+                ცენტრის დახმარებით ან ინიციატივით.
+              </p>
+            </div>
+            <div class="footer__first__rights">
+              <p>ყველა უფლება დაცულია</p>
+            </div>
+          </div>
+          <div class="footer__second">
+            <div class="footer__second__uls">
+              <ul>
+                <a href="https://glosarium.iliauni.edu.ge"
+                  ><li>მთავარი გვერდი</li></a
+                >
+                <a href="https://glosarium.iliauni.edu.ge/about-us"
+                  ><li>ჩვენ შესახებ</li></a
+                >
+                <a href="https://glosarium.iliauni.edu.ge/glossary"
+                  ><li>გლოსარიუმი</li></a
+                >
+                <a href="#"><li>ბლოგი</li></a>
+              </ul>
+
+              <form
+                action="https://glosarium.iliauni.edu.ge/subscribe"
+                method="post"
+                class="footer__input footer__input__first"
+              >
+                <input
+                  type="hidden"
+                  name="_token"
+                  value="tMgG2ydFt7b9YqrnAZLluarOIdZUd80UrNRUoB1F"
+                />
+                <input
+                  required
+                  type="email"
+                  name="subscribe_email"
+                  placeholder="ჩაწერეთ თქვენი ელ-ფოსტა"
+                  value=""
+                />
+                <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
+                <button type="submit">
+                  <img src="images/icons/email-send.svg" />
+                </button>
+              </form>
+            </div>
+            <div class="footer__input footer__input__second">
+              <input type="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა" />
+              <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
+              <img src="images/icons/email-send.svg" />
+            </div>
+            <div class="footer__by footer__by__normal">
+              <p>
+                გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების
+                ცენტრის დახმარებით ან ინიციატივით.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://glosarium.iliauni.edu.ge/js/app.js"></script>
+  </body>
+</html>
