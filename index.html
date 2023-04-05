@@ -9,6 +9,7 @@
       <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
       <link rel="stylesheet" href="./scss/style.css" />
       <title>გლოსარიუმი</title>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     </head>
   </head>
   <body>
@@ -48,7 +49,7 @@
     <section class="main">
       <div class="container main__inner">
         <div class="main__title">
-          <p>გლოსარიუმი? რა არის უცხო სიტყვები და მათი ქართული შესატყვისები</p>
+          <p>უცხო სიტყვებისა და მათი ქართული შესატყვისების გლოსარიუმი</p>
         </div>
         <div class="main__cover">
           <div class="img">
@@ -191,7 +192,7 @@
         <div class="info__text">
           <div class="info__text__title title">
             <h3>
-              გლოსარიუმი? რა არის უცხო სიტყვები და მათი ქართული შესატყვისები
+              რა არის უცხო სიტყვებისა და მათი ქართული შესატყვისების გლოსარიუმი?
             </h3>
           </div>
           <div class="info__text__p">
@@ -214,7 +215,7 @@
     <section class="daily-word popular-word">
       <div class="container daily-word__inner mySwiper" data-swipper="mySwiper">
         <div class="daily-word__title title">
-          <h3>ყველაზე ხშირად მოძებნილი სიტყვები</h3>
+          <h3 class="wordAlign">ყველაზე ხშირად მოძებნილი სიტყვები</h3>
         </div>
         <div class="daily-word__wrapper swiper-wrapper">
           <div
@@ -222,8 +223,10 @@
             data-swipper="swiper-slide"
           >
             <div class="daily-word__wrapper--box-content word">
-              <img src="images/icons/check-circle.svg" alt="check-circle" />
-              <span class="copyable-text">გადახრა;</span>
+              <div class="checkContaner">
+                <img src="images/icons/check-circle.svg" alt="check-circle" />
+                <span class="copyable-text">გადახრა;</span>
+              </div>
               <!-- <img
                 src="images/icons/heart.svg"
                 alt="heart"
@@ -236,8 +239,10 @@
               />
             </div>
             <div class="daily-word__wrapper--box-content word">
-              <img src="images/icons/x-cross.svg" alt="x-cross" />
-              <span class="copyable-text">აბერაცია</span>
+              <div class="checkContaner">
+                <img src="images/icons/x-cross.svg" alt="x-cross" />
+                <span class="copyable-text">აბერაცია</span>
+              </div>
               <img
                 src="images/icons/copy.svg"
                 alt="copy"
@@ -258,7 +263,7 @@
     <section class="daily-word last-word">
       <div class="container daily-word__inner mySwiper" data-swipper="mySwiper">
         <div class="daily-word__title title">
-          <h3>ბოლოს დამატებული სიტყვები</h3>
+          <h3 class="wordAlign">ბოლოს დამატებული სიტყვები</h3>
         </div>
 
         <div class="daily-word__wrapper swiper-wrapper">
@@ -267,13 +272,16 @@
             data-swipper="swiper-slide"
           >
             <div class="daily-word__wrapper--box-content word">
-              <img src="images/icons/check-circle.svg" alt="check-circle" />
-              <span class="copyable-text">სასტუმრო;</span>
+              <div class="checkContaner">
+                <img src="images/icons/check-circle.svg" alt="check-circle" />
+                <span class="copyable-text">სასტუმრო;</span>
+              </div>
               <img
                 src="images/icons/copy.svg"
                 alt="copy"
                 class="second-icon copy"
               />
+
               <!-- <img
                 src="images/icons/heart.svg"
                 alt="heart"
@@ -281,8 +289,10 @@
               /> -->
             </div>
             <div class="daily-word__wrapper--box-content word">
-              <img src="images/icons/x-cross.svg" alt="x-cross" />
-              <span class="copyable-text">ოტელი</span>
+              <div class="checkContaner">
+                <img src="images/icons/x-cross.svg" alt="x-cross" />
+                <span class="copyable-text">ოტელი</span>
+              </div>
               <img
                 src="images/icons/copy.svg"
                 alt="copy"
@@ -295,8 +305,10 @@
             data-swipper="swiper-slide"
           >
             <div class="daily-word__wrapper--box-content word">
-              <img src="images/icons/check-circle.svg" alt="check-circle" />
-              <span class="copyable-text">კაცთმოყვარეობა.</span>
+              <div class="checkContaner">
+                <img src="images/icons/check-circle.svg" alt="check-circle" />
+                <span class="copyable-text">კაცთმოყვარეობა;</span>
+              </div>
               <img
                 src="images/icons/copy.svg"
                 alt="copy"
@@ -309,8 +321,10 @@
               /> -->
             </div>
             <div class="daily-word__wrapper--box-content word">
-              <img src="images/icons/x-cross.svg" alt="x-cross" />
-              <span class="copyable-text">ჰუმანურობა</span>
+              <div class="checkContaner">
+                <img src="images/icons/x-cross.svg" alt="x-cross" />
+                <span class="copyable-text">ჰუმანურობა</span>
+              </div>
               <img
                 src="images/icons/copy.svg"
                 alt="copy"
@@ -323,8 +337,10 @@
             data-swipper="swiper-slide"
           >
             <div class="daily-word__wrapper--box-content word">
-              <img src="images/icons/check-circle.svg" alt="check-circle" />
-              <span class="copyable-text">ჩუქურთმა;</span>
+              <div class="checkContaner">
+                <img src="images/icons/check-circle.svg" alt="check-circle" />
+                <span class="copyable-text">ჩუქურთმა;</span>
+              </div>
               <img
                 src="images/icons/copy.svg"
                 alt="copy"
@@ -337,8 +353,10 @@
               /> -->
             </div>
             <div class="daily-word__wrapper--box-content word">
-              <img src="images/icons/x-cross.svg" alt="x-cross" />
-              <span class="copyable-text">ორნამენტი</span>
+              <div class="checkContaner">
+                <img src="images/icons/x-cross.svg" alt="x-cross" />
+                <span class="copyable-text">ორნამენტი</span>
+              </div>
               <img
                 src="images/icons/copy.svg"
                 alt="copy"
@@ -431,7 +449,6 @@
                 <a href="https://glosarium.iliauni.edu.ge/glossary"
                   ><li>გლოსარიუმი</li></a
                 >
-                <a href="#"><li>ბლოგი</li></a>
               </ul>
 
               <form
@@ -463,7 +480,9 @@
               <img src="images/icons/email-send.svg" />
             </div>
             <div class="footer__by footer__by__normal">
-              <p></p>
+              <img src="images/icons/iliaUni.svg" alt="iliaUni" />
+              <img class="unilab" src="images/icons/unilab.svg" alt="unilab" />
+              <img src="images/icons/lexicography.svg" alt="lexicography" />
             </div>
           </div>
         </div>
