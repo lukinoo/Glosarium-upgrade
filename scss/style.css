@@ -976,7 +976,39 @@ span[aria-current=page] {
   align-items: center;
   justify-content: space-between;
 }
+.daily-word__wrapper--box-content .hoverContainer {
+  position: relative;
+}
+.daily-word__wrapper--box-content .hoverContainer .hover-text {
+  position: absolute;
+  width: 301px;
+  height: 30px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(214, 214, 214, 0.25);
+  border-radius: 4px;
+  top: -35px;
+  left: -100px;
+  display: none;
+  text-align: center;
+}
+.daily-word__wrapper--box-content .hoverContainer .hover-text .hoverFlexContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.daily-word__wrapper--box-content .hoverContainer .hover-text .hoverFlexContainer img {
+  width: 15px;
+  margin: 0px 8px 0px 0px;
+}
+.daily-word__wrapper--box-content .hoverContainer .hover-text .hoverFlexContainer span {
+  font-weight: 350;
+  font-size: 10px;
+  color: #6a6a6a;
+}
 .daily-word__wrapper--box-content .checkContaner {
+  display: inline-block;
   display: flex;
 }
 .daily-word__wrapper--box-content .checkContaner img {

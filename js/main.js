@@ -111,11 +111,11 @@ const removeCopyActiveClass = () => {
 
 copy.forEach((item) => {
   item.addEventListener("click", () => {
-    if(item.classList.contains('copy-clicked')){
-      item.classList.remove('copy-clicked');
-    }else {
-      let parent = item.closest('.word');
-      let text = parent.querySelector('.copyable-text');
+    if (item.classList.contains("copy-clicked")) {
+      item.classList.remove("copy-clicked");
+    } else {
+      let parent = item.closest(".word");
+      let text = parent.querySelector(".copyable-text");
       copyOnClipboard(text.innerHTML);
 
       removeCopyActiveClass();
