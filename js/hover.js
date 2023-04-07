@@ -1,10 +1,12 @@
-const hoverContainer = document.querySelector(".hoverContainer");
-const hoverText = document.querySelector(".hover-text");
+const containers = document.querySelectorAll(".hoverContainer");
+const hoverTexts = document.querySelectorAll(".hover-text");
 
-hoverContainer.addEventListener("mouseenter", () => {
-  hoverText.style.display = "block";
-});
+containers.forEach((container, index) => {
+  container.addEventListener("mouseenter", () => {
+    hoverTexts[index].style.display = "block";
+  });
 
-hoverContainer.addEventListener("mouseleave", () => {
-  hoverText.style.display = "none";
+  container.addEventListener("mouseleave", () => {
+    hoverTexts[index].style.display = "none";
+  });
 });
