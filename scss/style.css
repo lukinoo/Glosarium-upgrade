@@ -692,6 +692,26 @@ span[aria-current=page] {
   padding-bottom: 23px;
   background-color: #F8F8FC;
 }
+.search form {
+  position: relative;
+}
+.search form #searched-words {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+  background: #F8F8FC;
+  border-radius: 18px;
+}
+.search form #searched-words li {
+  padding: 0.6rem 1rem;
+}
+.search form #searched-words li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
 @media (max-width: 960px) {
   .search {
     margin: 10px 0;

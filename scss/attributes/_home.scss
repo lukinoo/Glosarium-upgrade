@@ -59,6 +59,26 @@
   margin: 50px 0;
   padding-bottom: 23px;
   background-color: $mainBackground;
+  form {
+    position: relative;
+    #searched-words {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      max-width: 900px;
+      width: 90%;
+      margin: 0 auto;
+      background: $mainBackground;
+      border-radius: 18px;
+      li {
+        &:not(:last-child) {
+          border-bottom: 1px solid #ccc;
+        }
+        padding: 0.6rem 1rem;
+      }
+    }
+  }
   @media (max-width: 960px) {
     margin: 10px 0;
   }
