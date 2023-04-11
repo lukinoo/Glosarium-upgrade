@@ -339,6 +339,27 @@ a {
   background: #A29DC2;
   padding: 8px 0;
 }
+.search-secondary form {
+  position: relative;
+}
+.search-secondary form #searched-words {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  background: #F8F8FC;
+  border-radius: 18px;
+  z-index: 9;
+}
+.search-secondary form #searched-words li {
+  padding: 0.6rem 1rem;
+}
+.search-secondary form #searched-words li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
 .search-secondary__input {
   width: 550px;
   position: relative;
