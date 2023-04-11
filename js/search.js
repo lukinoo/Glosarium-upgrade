@@ -3,6 +3,18 @@ const searchInput = document.getElementById("search-input");
 
 const API_URL = "https://glosarium.iliauni.edu.ge/search?search=";
 
+const debounce = (func, delay) => {
+  let timeout;
+
+  return function (...args) {
+    clearTimeout(timeout);
+
+    timeout = setTimeout(() => {
+      func.apply(this, args);
+    }, delay);
+  };
+};
+
 const createSearchedWords = (words) => {
   searchedWords.innerHTML = "";
 
@@ -36,4 +48,4 @@ const handleSeach = (e) => {
 };
 
 // input event
-searchInput.addEventListener("input", handleSeach);
+searchInput.addEventListener("input", debounce(handleSeach, 1000));
