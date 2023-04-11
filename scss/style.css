@@ -854,8 +854,7 @@ span[aria-current=page] {
 .info__cover img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .info__cover .title h3 {
   text-align: center;
@@ -1329,8 +1328,7 @@ span[aria-current=page] {
 .about-us__right__img img {
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .targets {
@@ -1630,8 +1628,13 @@ span[aria-current=page] {
   border-radius: 24px;
   width: 45%;
   padding: 21px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-between;
 }
 
@@ -1964,8 +1967,7 @@ span[aria-current=page] {
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-  -moz-column-gap: 5%;
-       column-gap: 5%;
+  column-gap: 5%;
   row-gap: 10%;
 }
 @media (max-width: 1024px) {
