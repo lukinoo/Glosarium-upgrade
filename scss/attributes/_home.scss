@@ -99,6 +99,7 @@
     width: 893px;
     position: relative;
     margin: 0 auto;
+
     @media (max-width: 960px) {
       width: 70%;
     }
@@ -107,10 +108,15 @@
       top: 50%;
       left: 30px;
       transform: translateY(-50%);
+      border-right: 1px solid #cfcfcf;
+      padding: 10px 15px 10px 0px;
+
       cursor: pointer;
       @media (max-width: 960px) {
         width: 23px;
         height: 23px;
+        border-right: 1px solid #cfcfcf;
+        padding: 0px 10px 0px 0px;
       }
     }
     input {

@@ -768,12 +768,16 @@ span[aria-current=page] {
   top: 50%;
   left: 30px;
   transform: translateY(-50%);
+  border-right: 1px solid #cfcfcf;
+  padding: 10px 15px 10px 0px;
   cursor: pointer;
 }
 @media (max-width: 960px) {
   .search__input img {
     width: 23px;
     height: 23px;
+    border-right: 1px solid #cfcfcf;
+    padding: 0px 10px 0px 0px;
   }
 }
 .search__input input {
