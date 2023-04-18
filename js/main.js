@@ -111,6 +111,7 @@ const removeCopyActiveClass = () => {
 
 copy.forEach((item) => {
   item.addEventListener("click", () => {
+    console.log("test");
     if (item.classList.contains("copy-clicked")) {
       item.classList.remove("copy-clicked");
     } else {
@@ -123,3 +124,5 @@ copy.forEach((item) => {
     }
   });
 });
+
+console.log(copy);
