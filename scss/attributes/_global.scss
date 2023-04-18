@@ -1,4 +1,3 @@
-// @import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:400,500');
 html,
 body {
   position: relative;
@@ -6,7 +5,7 @@ body {
   line-height: 1.4;
 }
 * {
-  font-family: "FiraGO", sans-serif !important;
+  font-family: "FiraGO", sans-serif;
 }
 .burger-active {
   display: block;
@@ -215,7 +214,7 @@ a {
       border: none;
       border-radius: 12px;
       background-color: $mainBackground;
-      font-size: 14px;
+      font-size: 13px;
       background: #fff;
     }
     input[type="search"]::-webkit-search-decoration,
@@ -238,7 +237,14 @@ a {
   }
   &__first-row {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    @media (max-width: 960px) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-top: 29px;
+    }
   }
   &__first {
     @media (max-width: 960px) {
@@ -248,10 +254,9 @@ a {
     &__logo {
       width: 120px;
       img {
-        width: 100%;
+        width: 216px;
         @media (max-width: 960px) {
           width: 100%;
-          margin-top: 12px;
         }
       }
     }
@@ -271,6 +276,7 @@ a {
       }
     }
     &__rights {
+      width: 254px;
       font-size: 14px;
       @media (max-width: 960px) {
         font-size: 8px;
@@ -279,22 +285,27 @@ a {
     }
   }
   &__second {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 41px;
     @media (max-width: 960px) {
-      width: 100%;
+      flex-direction: column;
     }
-    &__uls {
+
+    .pageUl {
+      width: 254px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+
       ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
         li {
-          margin: 12px 0;
           font-size: $SFont;
           @media (max-width: 960px) {
-            font-size: 10px;
+            display: none;
           }
-        }
-        @media (max-width: 467px) {
-          margin: 0 13px;
         }
         a {
           color: #ffff;
@@ -353,42 +364,33 @@ a {
     &__second {
       display: none;
       @media (max-width: 960px) {
-        width: 60%;
+        width: 100%;
         display: block;
         margin-left: 0;
         margin-top: 35px;
       }
-      @media (max-width: 476px) {
-        width: 100%;
-      }
+      // @media (max-width: 476px) {
+      //   width: 100%;
+      // }
     }
   }
   &__by {
+    display: flex;
+    justify-content: flex-end;
     font-style: italic;
-    @media (max-width: 960px) {
-      font-size: 10px;
-      margin-top: 40px;
-      width: 100%;
-    }
-    &__normal {
-      display: flex;
-      justify-content: flex-end;
-
-      .unilab {
-        margin: 0px 18px;
-      }
-      @media (max-width: 960px) {
-        display: none;
-      }
-    }
-    &__responsive {
+    gap: 8px;
+    @media (max-width: 580px) {
       display: none;
-      @media (max-width: 960px) {
-        display: block;
-        width: 100%;
-        font-size: 10px;
-      }
     }
+
+    // &__responsive {
+    //   display: none;
+    //   @media (max-width: 960px) {
+    //     display: block;
+    //     width: 100%;
+    //     font-size: 10px;
+    //   }
+    // }
   }
 }
 .error {
@@ -439,8 +441,4 @@ span[aria-current="page"] {
 }
 .add-word-form .submit button {
   color: #fff;
-}
-
-.footerItem {
-  flex: 1;
 }
