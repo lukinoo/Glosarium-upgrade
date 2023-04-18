@@ -1,4 +1,3 @@
-// @import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:400,500');
 html,
 body {
   position: relative;
@@ -6,7 +5,7 @@ body {
   line-height: 1.4;
 }
 * {
-  font-family: "FiraGO", sans-serif !important;
+  font-family: "FiraGO", sans-serif;
 }
 .burger-active {
   display: block;
@@ -379,11 +378,9 @@ a {
     display: flex;
     justify-content: flex-end;
     font-style: italic;
-    gap: 32px;
+    gap: 8px;
     @media (max-width: 580px) {
       display: none;
-    }
-    img {
     }
 
     // &__responsive {

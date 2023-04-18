@@ -138,6 +138,30 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "FiraGO";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../fonts/FiraGO-Regular.woff2") format("woff2"), url("../../fonts/FiraGO-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "FiraGO";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../../fonts/FiraGO-Bold.woff2") format("woff2"), url("../../fonts/FiraGO-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "FiraGO";
+  font-weight: normal;
+  font-style: italic;
+  src: url("../../fonts/FiraGO-Italic.woff2") format("woff2"), url("../../fonts/FiraGO-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "FiraGO";
+  font-weight: bold;
+  font-style: italic;
+  src: url("../../fonts/FiraGO-Italic.woff2") format("woff2"), url("../../fonts/FiraGO-BoldItalic.woff") format("woff");
+}
 html,
 body {
   position: relative;
@@ -146,7 +170,7 @@ body {
 }
 
 * {
-  font-family: "FiraGO", sans-serif !important;
+  font-family: "FiraGO", sans-serif;
 }
 
 .burger-active {
@@ -567,13 +591,14 @@ a {
   display: flex;
   justify-content: flex-end;
   font-style: italic;
-  gap: 32px;
+  gap: 8px;
 }
 @media (max-width: 580px) {
   .footer__by {
     display: none;
   }
 }
+
 .error {
   display: flex;
   justify-content: center;
