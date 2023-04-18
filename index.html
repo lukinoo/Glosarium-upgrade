@@ -7,6 +7,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      />
       <link rel="stylesheet" href="./scss/style.css" />
       <link
         rel="icon"
@@ -73,6 +77,7 @@
           </div>
           <div class="search__input">
             <img src="images/icons/search.svg" alt="search" />
+
             <input
               type="search"
               name="word"
@@ -218,72 +223,15 @@
         </div>
       </div>
     </section>
-    <section class="daily-word popular-word">
-      <div class="container daily-word__inner mySwiper" data-swipper="mySwiper">
-        <div class="daily-word__title title">
-          <h3 class="wordAlign">ყველაზე ხშირად მოძებნილი სიტყვები</h3>
-        </div>
-        <div class="daily-word__wrapper swiper-wrapper">
-          <div
-            class="daily-word__wrapper--box first"
-            data-swipper="swiper-slide"
-          >
-            <div class="daily-word__wrapper--box-content word">
-              <div class="checkContaner">
-                <img src="images/icons/check-circle.svg" alt="check-circle" />
-                <span class="copyable-text">გადახრა;</span>
-              </div>
-              <!-- <img
-                src="images/icons/heart.svg"
-                alt="heart"
-                class="second-icon heart"
-              /> -->
-              <img
-                src="images/icons/copy.svg"
-                alt="copy"
-                class="second-icon copy"
-              />
-            </div>
-            <div class="daily-word__wrapper--box-content word">
-              <div class="checkContaner hoverContainer">
-                <img src="images/icons/x-cross.svg" alt="x-cross" />
-                <span class="copyable-text">აბერაცია</span>
-                <div class="hover-text">
-                  <div class="hoverFlexContainer">
-                    <img src="images/icons/x-cross.svg" alt="x-cross" />
-                    <span>რეკომენდებულია ქართული შესატყვისის გამოყენება</span>
-                  </div>
-                </div>
-              </div>
-              <img
-                src="images/icons/copy.svg"
-                alt="copy"
-                class="second-icon copy"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="daily-word__controls" id="controls">
-          <div data-swipper="swiper-button-prev"></div>
-          <div data-swipper="swiper-button-next"></div>
-        </div>
-        <div class="daily-word__full full-dictionary">
-          <a href="#">სრული გლოსარიუმი</a>
-        </div>
-      </div>
-    </section>
     <section class="daily-word last-word">
-      <div class="container daily-word__inner mySwiper" data-swipper="mySwiper">
-        <div class="daily-word__title title">
-          <h3 class="wordAlign">ბოლოს დამატებული სიტყვები</h3>
-        </div>
-
-        <div class="daily-word__wrapper swiper-wrapper">
-          <div
-            class="daily-word__wrapper--box first"
-            data-swipper="swiper-slide"
-          >
-            <div class="daily-word__wrapper--box-content word">
+      <div class="daily-word__title title">
+        <h3 class="wordAlign">ბოლოს დამატებული სიტყვები</h3>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="wrapperBox">
               <div class="checkContaner">
                 <img src="images/icons/check-circle.svg" alt="check-circle" />
                 <span class="copyable-text">სასტუმრო;</span>
@@ -293,23 +241,11 @@
                 alt="copy"
                 class="second-icon copy"
               />
-
-              <!-- <img
-                src="images/icons/heart.svg"
-                alt="heart"
-                class="second-icon heart"
-              /> -->
             </div>
-            <div class="daily-word__wrapper--box-content word">
+            <div class="wrapperBox">
               <div class="checkContaner hoverContainer">
                 <img src="images/icons/x-cross.svg" alt="x-cross" />
                 <span class="copyable-text">ოტელი</span>
-                <div class="hover-text">
-                  <div class="hoverFlexContainer">
-                    <img src="images/icons/x-cross.svg" alt="x-cross" />
-                    <span>რეკომენდებულია ქართული შესატყვისის გამოყენება</span>
-                  </div>
-                </div>
               </div>
               <img
                 src="images/icons/copy.svg"
@@ -317,23 +253,9 @@
                 class="second-icon copy"
               />
             </div>
-            <!-- <div class="daily-word__wrapper--box-content word">
-              <div class="checkContaner">
-                <img src="images/icons/x-cross.svg" alt="x-cross" />
-                <span class="copyable-text">ოტელი</span>
-              </div>
-              <img
-                src="images/icons/copy.svg"
-                alt="copy"
-                class="second-icon copy"
-              />
-            </div> -->
           </div>
-          <div
-            class="daily-word__wrapper--box second"
-            data-swipper="swiper-slide"
-          >
-            <div class="daily-word__wrapper--box-content word">
+          <div class="swiper-slide">
+            <div class="wrapperBox">
               <div class="checkContaner">
                 <img src="images/icons/check-circle.svg" alt="check-circle" />
                 <span class="copyable-text">კაცთმოყვარეობა;</span>
@@ -343,22 +265,11 @@
                 alt="copy"
                 class="second-icon copy"
               />
-              <!-- <img
-                src="images/icons/heart.svg"
-                alt="heart"
-                class="second-icon heart"
-              /> -->
             </div>
-            <div class="daily-word__wrapper--box-content word">
+            <div class="wrapperBox">
               <div class="checkContaner hoverContainer">
                 <img src="images/icons/x-cross.svg" alt="x-cross" />
                 <span class="copyable-text">ჰუმანურობა</span>
-                <div class="hover-text">
-                  <div class="hoverFlexContainer">
-                    <img src="images/icons/x-cross.svg" alt="x-cross" />
-                    <span>რეკომენდებულია ქართული შესატყვისის გამოყენება</span>
-                  </div>
-                </div>
               </div>
               <img
                 src="images/icons/copy.svg"
@@ -367,11 +278,8 @@
               />
             </div>
           </div>
-          <div
-            class="daily-word__wrapper--box third"
-            data-swipper="swiper-slide"
-          >
-            <div class="daily-word__wrapper--box-content word">
+          <div class="swiper-slide">
+            <div class="wrapperBox">
               <div class="checkContaner">
                 <img src="images/icons/check-circle.svg" alt="check-circle" />
                 <span class="copyable-text">ჩუქურთმა;</span>
@@ -381,22 +289,11 @@
                 alt="copy"
                 class="second-icon copy"
               />
-              <!-- <img
-                src="images/icons/heart.svg"
-                alt="heart"
-                class="second-icon heart"
-              /> -->
             </div>
-            <div class="daily-word__wrapper--box-content word">
+            <div class="wrapperBox">
               <div class="checkContaner hoverContainer">
                 <img src="images/icons/x-cross.svg" alt="x-cross" />
                 <span class="copyable-text">ორნამენტი</span>
-                <div class="hover-text">
-                  <div class="hoverFlexContainer">
-                    <img src="images/icons/x-cross.svg" alt="x-cross" />
-                    <span>რეკომენდებულია ქართული შესატყვისის გამოყენება</span>
-                  </div>
-                </div>
               </div>
               <img
                 src="images/icons/copy.svg"
@@ -406,15 +303,13 @@
             </div>
           </div>
         </div>
-        <div class="daily-word__controls" id="controls">
-          <div data-swipper="swiper-button-prev"></div>
-          <div data-swipper="swiper-button-next"></div>
-        </div>
-        <div class="daily-word__full full-dictionary">
-          <a href="https://glosarium.iliauni.edu.ge/glossary"
-            >სრული გლოსარიუმი</a
-          >
-        </div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="daily-word__full full-dictionary">
+        <a href="https://glosarium.iliauni.edu.ge/glossary">სრული გლოსარიუმი</a>
       </div>
     </section>
     <!-- <section class="similar-word">
@@ -466,20 +361,19 @@
     <footer class="footer">
       <div class="container footer__inner">
         <div class="footer__first-row containerItem">
-          <div class="footer__first footerItem">
-            <div class="footer__first__logo">
-              <img src="images/icons/logo-white.svg" alt="logo-white" />
-            </div>
-
-            <div class="footer__by__responsive">
-              <p></p>
-            </div>
-            <div class="footer__first__rights">
-              <p>ყველა უფლება დაცულია</p>
-            </div>
-          </div>
           <div class="footer__second footerItem">
-            <div class="footer__second__uls containerItem">
+            <div class="footer__first footerItem">
+              <div class="footer__first__logo">
+                <img src="images/icons/logo-white.svg" alt="logo-white" />
+              </div>
+              <div class="footer__by__responsive">
+                <p></p>
+              </div>
+              <div class="footer__first__rights">
+                <p>ყველა უფლება დაცულია</p>
+              </div>
+            </div>
+            <div class="pageUl">
               <ul class="footerItem">
                 <a href="https://glosarium.iliauni.edu.ge"
                   ><li>მთავარი გვერდი</li></a
@@ -491,7 +385,8 @@
                   ><li>გლოსარიუმი</li></a
                 >
               </ul>
-
+            </div>
+            <div class="footer__second__uls containerItem">
               <form
                 action="https://glosarium.iliauni.edu.ge/subscribe"
                 method="post"
@@ -520,11 +415,11 @@
               <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
               <img src="images/icons/email-send.svg" />
             </div>
-            <div class="footer__by footer__by__normal">
-              <img src="images/icons/iliaUni.svg" alt="iliaUni" />
-              <img class="unilab" src="images/icons/unilab.svg" alt="unilab" />
-              <img src="images/icons/lexicography.svg" alt="lexicography" />
-            </div>
+          </div>
+          <div class="footer__by footer__by__normal">
+            <img src="images/icons/iliaUni.svg" alt="iliaUni" />
+            <img src="images/icons/unilab.svg" alt="unilab" />
+            <img src="images/icons/lexicography.svg" alt="lexicography" />
           </div>
         </div>
       </div>
@@ -532,5 +427,6 @@
     <script src="https://glosarium.iliauni.edu.ge/js/app.js"></script>
     <script src="./js/hover.js"></script>
     <script src="./js/search.js"></script>
+    <script src="./js/swiperSlider.js"></script>
   </body>
 </html>
