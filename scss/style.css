@@ -383,7 +383,7 @@ a {
   border: none;
   border-radius: 12px;
   background-color: #F8F8FC;
-  font-size: 14px;
+  font-size: 13px;
   background: #fff;
 }
 .search-secondary__input input[type=search]::-webkit-search-decoration,
@@ -1662,8 +1662,10 @@ span {
 }
 @media (max-width: 960px) {
   .add-word-form__wrapper {
+    flex-direction: column;
     justify-content: space-between;
     padding: 0 50px;
+    gap: 35px;
   }
 }
 @media (max-width: 575px) {
@@ -1768,6 +1770,12 @@ span {
     padding-left: 35px;
   }
 }
+@media (max-width: 575px) {
+  .add-word-form__right {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
 .add-word-form__right textarea {
   width: 400px;
   height: 100px;
@@ -1781,11 +1789,16 @@ span {
 }
 @media (max-width: 960px) {
   .add-word-form__right textarea {
-    width: 200px;
+    width: 100%;
   }
 }
 .add-word-form__right__georgian-word {
   margin-top: 47px;
+}
+@media (max-width: 960px) {
+  .add-word-form__right__georgian-word {
+    margin-top: 0px;
+  }
 }
 .add-word-form .submit {
   display: flex;
