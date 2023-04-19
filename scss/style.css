@@ -1482,6 +1482,161 @@ span {
   }
 }
 
+.workedOnTheProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  background-color: #f8f8fc;
+}
+.workedOnTheProject__inner {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  .workedOnTheProject__inner {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.workedOnTheProject h1 {
+  padding: 70px 12px;
+  text-align: center;
+  color: #000000;
+  font-family: FiraGO;
+  font-size: 26px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .workedOnTheProject h1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) and (max-width: 480px) {
+  .workedOnTheProject h1 {
+    font-size: 18px;
+  }
+}
+.workedOnTheProject .grid-container {
+  row-gap: 40px;
+  padding: 0px 70px 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .workedOnTheProject .grid-container {
+    padding: 20px;
+    justify-content: center;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) and (max-width: 480px) {
+  .workedOnTheProject .grid-container {
+    padding: 0px;
+    font-size: 16px;
+  }
+}
+.workedOnTheProject .column {
+  flex: 1;
+  min-width: calc(33.333% - 2px);
+}
+.workedOnTheProject .column:nth-child(2) {
+  border-left: 1px dashed rgba(163, 157, 197, 0.2);
+  border-right: 1px dashed rgba(163, 157, 197, 0.2);
+}
+.workedOnTheProject .header {
+  height: 100px;
+  padding: 1rem;
+  text-align: left;
+  font-family: "FiraGO";
+  font-size: 22px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 768px) {
+  .workedOnTheProject .header {
+    font-size: 16px;
+    height: 75px;
+  }
+}
+@media (max-width: 768px) and (max-width: 480px) {
+  .workedOnTheProject .header {
+    font-size: 16px;
+    text-align: center;
+    height: 60px;
+  }
+}
+.workedOnTheProject ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.workedOnTheProject li {
+  font-family: "Helvetica";
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #7063c6;
+  padding: 1rem;
+  text-align: center;
+}
+.workedOnTheProject li span:nth-child(odd) {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #7063c6;
+}
+.workedOnTheProject li span:nth-child(even) {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.8;
+  font-style: italic;
+}
+.workedOnTheProject li span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-family: "Helvetica";
+  font-weight: 400;
+  font-size: 20px;
+  color: #7063c6;
+  opacity: 0.8;
+  text-align: left;
+  padding: 0rem 2rem;
+}
+@media (max-width: 768px) {
+  .workedOnTheProject li span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) and (max-width: 480px) {
+  .workedOnTheProject li span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .workedOnTheProject .column {
+    min-width: calc(50% - 1px);
+  }
+  .workedOnTheProject .column:nth-child(2) {
+    border-left: none;
+    border-right: none;
+  }
+  .workedOnTheProject .column:nth-child(odd) {
+    border-right: 1px dashed rgba(163, 157, 197, 0.2);
+  }
+}
+@media (max-width: 480px) {
+  .workedOnTheProject .column {
+    min-width: 100%;
+  }
+  .workedOnTheProject .column:nth-child(odd) {
+    border-right: none;
+  }
+}
+
 .glosarium-alphabet {
   background: rgba(222, 219, 238, 0.2);
   padding: 90px 0 110px;
@@ -1560,9 +1715,44 @@ span {
   font-size: 26px;
   padding: 0 15%;
 }
+@media (max-width: 700px) {
+  .glosarium-words__heading-wrapper h2 {
+    display: flex;
+    align-items: center;
+    font-family: "FiraGO";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .glosarium-words__heading-wrapper h2:first-of-type::before {
+    display: flex;
+    content: url("../../images/icons/x-cross.svg");
+    margin-right: 8px;
+  }
+}
+@media (max-width: 700px) {
+  .glosarium-words__heading-wrapper h2:last-of-type::before {
+    font-family: "FiraGO";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    content: url("../../images/icons/check-circle.svg");
+    margin-right: 8px;
+  }
+}
 @media (max-width: 960px) {
   .glosarium-words__heading-wrapper {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .glosarium-words__heading-wrapper {
+    justify-content: center;
     font-size: 13px;
+    flex-direction: column;
   }
 }
 .glosarium-words .first-list-item {
@@ -1577,10 +1767,10 @@ span {
 }
 @media (max-width: 960px) {
   .glosarium-words__list-item p {
-    font-size: 11px;
+    font-size: 13px;
   }
   .glosarium-words__list-item img {
-    max-width: 12px;
+    max-width: 14px;
   }
 }
 @media (max-width: 700px) {
@@ -1628,12 +1818,14 @@ span {
   .foreign-word,
   .georgian-word {
     width: 45%;
+    padding: 21px 25px;
   }
 }
 @media (max-width: 700px) {
   .foreign-word,
   .georgian-word {
     width: 100%;
+    padding: 21px 25px;
   }
 }
 
