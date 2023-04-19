@@ -288,25 +288,35 @@
 
   li {
     font-family: "Helvetica";
-
     font-weight: 400;
     font-size: 18px;
     text-transform: uppercase;
     color: #7063c6;
     padding: 1rem;
     text-align: center;
-
+    span:nth-child(odd) {
+      font-weight: 600;
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #7063c6;
+    }
+    span:nth-child(even) {
+      font-weight: 400;
+      font-size: 16px;
+      opacity: 0.8;
+      font-style: italic;
+    }
     span {
       display: block;
       font-size: 0.9rem;
       font-weight: normal;
       font-family: "Helvetica";
-      font-style: italic;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 20px;
       color: #7063c6;
       opacity: 0.8;
       text-align: left;
+      padding: 0rem 2rem;
       @media (max-width: 768px) {
         font-size: 14px;
 
