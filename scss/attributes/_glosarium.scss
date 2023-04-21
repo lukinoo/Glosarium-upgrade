@@ -11,7 +11,9 @@
 
   .search__alphabet {
     margin-top: 90px;
-
+    @media (max-width: 480px) {
+      display: none;
+    }
     &__letter {
       &.active {
         background: #dcdddf;
