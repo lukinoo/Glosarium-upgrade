@@ -47,5 +47,4 @@ const handleSeach = (e) => {
   fetchSearchWords(val);
 };
 
-// input event
 searchInput.addEventListener("input", debounce(handleSeach, 1000));

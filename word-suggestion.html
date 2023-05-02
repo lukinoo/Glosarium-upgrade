@@ -145,9 +145,23 @@
             </div>
           </div>
           <div class="submit button">
-            <button type="submit">გაგზავნა</button>
+            <button id="openPopup" type="submit">გაგზავნა</button>
           </div>
         </form>
+      </div>
+    </section>
+    <section class="popUp">
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <button class="close" id="closePopup">
+            <img src="./images/icons/closeBtn.svg" alt="closeBtn" />
+          </button>
+          <div class="contentContainer">
+            <h2>შეთავაზება წარმატებით გაიგზავნა</h2>
+            <img src="./images/icons/checkIcon.svg" alt="tick" />
+            <p>ჩვენი გუნდი განიხილავს თქვენს შეთავაზებას</p>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -217,5 +231,6 @@
       </div>
     </footer>
     <script src="https://glosarium.iliauni.edu.ge/js/app.js"></script>
+    <script src="./js/popup.js"></script>
   </body>
 </html>
