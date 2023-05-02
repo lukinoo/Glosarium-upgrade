@@ -37,3 +37,5 @@ const handleSeach = (e) => {
 
 // input event
 searchInput.addEventListener("input", handleSeach);
+
+// pop up
