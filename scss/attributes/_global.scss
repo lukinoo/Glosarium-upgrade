@@ -245,6 +245,10 @@ a {
       align-items: flex-start;
       margin-top: 29px;
     }
+    @media (max-width: 580px) {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
   }
   &__first {
     @media (max-width: 960px) {
@@ -290,6 +294,9 @@ a {
     margin-bottom: 41px;
     @media (max-width: 960px) {
       flex-direction: column;
+    }
+    @media (max-width: 580px) {
+      margin-bottom: 30px;
     }
 
     .pageUl {
@@ -369,9 +376,9 @@ a {
         margin-left: 0;
         margin-top: 35px;
       }
-      // @media (max-width: 476px) {
-      //   width: 100%;
-      // }
+      @media (max-width: 580px) {
+        margin-top: 0px;
+      }
     }
   }
   &__by {
@@ -379,9 +386,6 @@ a {
     justify-content: flex-end;
     font-style: italic;
     gap: 8px;
-    @media (max-width: 580px) {
-      display: none;
-    }
 
     // &__responsive {
     //   display: none;

@@ -592,14 +592,14 @@ span {
     border: 2px solid #a29dc2;
     border-radius: 14px;
     padding: 20px;
-    // @media (max-width: 768px) {
-    //   width: 90%;
-    //   height: auto;
-    // }
-    // @media (max-width: 480px) {
-    //   width: 100%;
-    //   height: auto;
-    // }
+    @media (max-width: 768px) {
+      width: 70%;
+    }
+    @media (max-width: 480px) {
+      text-align: center;
+      width: 70%;
+      padding: 20px;
+    }
     .close {
       position: absolute;
       top: 14px;
@@ -607,6 +607,7 @@ span {
       border: none;
       background-color: #f8f8fa;
       cursor: pointer;
+      background-color: transparent;
     }
     .contentContainer {
       width: 100%;
@@ -620,13 +621,28 @@ span {
         font-size: 18px;
         color: #424242;
         font-weight: 900;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+        @media (max-width: 480px) {
+          font-size: 12px;
+        }
       }
       p {
         color: #757070;
         font-family: "FiraGO";
         font-weight: 400;
         font-size: 14px;
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+        @media (max-width: 480px) {
+          font-size: 10px;
+        }
       }
     }
+  }
+  img {
+    margin-right: 0px;
   }
 }
